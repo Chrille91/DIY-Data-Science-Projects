@@ -34,5 +34,5 @@ Our objective is to build multi-class classification models to predict the best 
 - **Single Feature Performance:**  
   Evaluation indicates that Potassium (K) is the strongest predictor among the individual soil measurements. However, even the best single feature achieves a mean accuracy of approximately 29%, suggesting that no single measurement is sufficient for robust prediction.
 
-- **Next Steps:**  
-  To improve predictive performance, a model that incorporates all soil features should be developed.
+### Next Steps
+To improve predictive performance, a model that incorporates all soil features should be developed.
