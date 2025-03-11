@@ -3,20 +3,36 @@
 
 ![Unbenannt](https://github.com/user-attachments/assets/d3f6f2ca-471b-4f84-ac8f-51b95377d17a)
 
-Measuring essential soil metrics such as nitrogen, phosphorous, potassium levels, and pH value is an important aspect of assessing soil condition. However, it can be an expensive and time-consuming process, which can cause farmers to prioritize which metrics to measure based on their budget constraints.
+### Overview
 
-Farmers have various options when it comes to deciding which crop to plant each season. Their primary objective is to maximize the yield of their crops, taking into account different factors. One crucial factor that affects crop growth is the condition of the soil in the field, which can be assessed by measuring basic elements such as nitrogen and potassium levels. Each crop has an ideal soil condition that ensures optimal growth and maximum yield.
+In this project, a farmer has provided a dataset (`soil_measures.csv`) containing essential soil measurements:
+- **N**: Nitrogen content ratio
+- **P**: Phosphorous content ratio
+- **K**: Potassium content ratio
+- **pH**: pH value of the soil
+- **crop**: The optimal crop for the field (target variable)
 
-A farmer reached out to you as a machine learning expert for assistance in selecting the best crop for his field. They've provided you with a dataset called `soil_measures.csv`, which contains:
+Our objective is to build multi-class classification models to predict the best crop for a field based on these soil measurements and to identify the single most important predictive feature.
 
-- `"N"`: Nitrogen content ratio in the soil
-- `"P"`: Phosphorous content ratio in the soil
-- `"K"`: Potassium content ratio in the soil
-- `"pH"` value of the soil
-- `"crop"`: categorical values that contain various crops (target variable).
+### Project Details
 
-Each row in this dataset represents various measures of the soil in a particular field. Based on these measurements, the crop specified in the `"crop"` column is the optimal choice for that field.  
+- **Dataset:** `soil_measures.csv`
+- **Target Variable:** `crop`
+- **Features:** `N`, `P`, `K`, `pH`
+- **Methodology:**
+  - Perform exploratory data analysis (EDA) to ensure data quality.
+  - Evaluate the predictive power of each soil measurement individually using both a simple train-test split and k-fold cross-validation.
+  - Use metrics such as accuracy, precision (macro), recall (macro), and F1 scores (macro and weighted) to assess feature performance.
+  - Visualize the results to compare how each feature performs.
 
-In this project, I will build multi-class classification models to predict the type of `"crop"` and identify the single most importance feature for predictive performance.
+### Code Structure
 
-### Results and Interpretation
+- `sowing_success.ipynb`: Contains the main code for loading data, evaluating each feature with both simple and cross-validation approaches, and visualizing the results.
+
+## Key Findings
+
+- **Single Feature Performance:**  
+  Evaluation indicates that Potassium (K) is the strongest predictor among the individual soil measurements. However, even the best single feature achieves a mean accuracy of approximately 29%, suggesting that no single measurement is sufficient for robust prediction.
+
+- **Next Steps:**  
+  To improve predictive performance, a model that incorporates all soil features should be developed.
