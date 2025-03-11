@@ -1,5 +1,5 @@
 # Supervised Learning 
-## Project 1 | Sowing Success: How Machine Learning Helps Farmers Select the Best Crops
+## Project 1 (DataCamp) | Sowing Success: How Machine Learning Helps Farmers Select the Best Crops
 
 ![Unbenannt](https://github.com/user-attachments/assets/d3f6f2ca-471b-4f84-ac8f-51b95377d17a)
 
