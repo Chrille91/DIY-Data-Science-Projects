@@ -28,6 +28,7 @@ Our objective is to build multi-class classification models to predict the best 
 ### Code Structure
 
 - `sowing_success.ipynb`: Contains the main code for loading data, evaluating each feature with both simple and cross-validation approaches, and visualizing the results.
+- fully commented incl. definitions and interpretations
 
 ### Key Findings
 
