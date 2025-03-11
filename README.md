@@ -29,7 +29,7 @@ Our objective is to build multi-class classification models to predict the best 
 
 - `sowing_success.ipynb`: Contains the main code for loading data, evaluating each feature with both simple and cross-validation approaches, and visualizing the results.
 
-## Key Findings
+### Key Findings
 
 - **Single Feature Performance:**  
   Evaluation indicates that Potassium (K) is the strongest predictor among the individual soil measurements. However, even the best single feature achieves a mean accuracy of approximately 29%, suggesting that no single measurement is sufficient for robust prediction.
